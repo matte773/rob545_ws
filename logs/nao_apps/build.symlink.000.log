@@ -1,0 +1,40 @@
+Symlinking /home/matt/rob545_ws/devel/share/nao_apps/cmake/nao_appsConfig.cmake
+Symlinking /home/matt/rob545_ws/devel/share/nao_apps/cmake/nao_appsConfig-version.cmake
+Symlinking /home/matt/rob545_ws/devel/lib/pkgconfig/nao_apps.pc
+Symlinking /home/matt/rob545_ws/devel/lib/python3/dist-packages/nao_apps/__init__.py
+Symlinking /home/matt/rob545_ws/devel/lib/nao_apps/cmake.lock
+Symlinking /home/matt/rob545_ws/devel/lib/nao_apps/nao_leds.py
+Symlinking /home/matt/rob545_ws/devel/lib/nao_apps/nao_footsteps.py
+Symlinking /home/matt/rob545_ws/devel/lib/nao_apps/nao_speech.py
+Symlinking /home/matt/rob545_ws/devel/lib/nao_apps/nao_diagnostic_updater.py
+Symlinking /home/matt/rob545_ws/devel/lib/nao_apps/nao_behaviors.py
+Symlinking /home/matt/rob545_ws/devel/lib/nao_apps/nao_tactile.py
+Symlinking /home/matt/rob545_ws/devel/lib/nao_apps/nao_walker.py
+Symlinking /home/matt/rob545_ws/devel/lib/nao_apps/nao_alife.py
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/cmake.lock, /home/matt/ros_ws/devel/./cmake.lock)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/share/nao_apps/cmake/nao_appsConfig.cmake, /home/matt/ros_ws/devel/share/nao_apps/cmake/nao_appsConfig.cmake)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/share/nao_apps/cmake/nao_appsConfig-version.cmake, /home/matt/ros_ws/devel/share/nao_apps/cmake/nao_appsConfig-version.cmake)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/pkgconfig/nao_apps.pc, /home/matt/ros_ws/devel/lib/pkgconfig/nao_apps.pc)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/python3/dist-packages/nao_apps/__init__.py, /home/matt/ros_ws/devel/lib/python3/dist-packages/nao_apps/__init__.py)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/nao_apps/cmake.lock, /home/matt/ros_ws/devel/lib/nao_apps/cmake.lock)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/nao_apps/nao_leds.py, /home/matt/ros_ws/devel/lib/nao_apps/nao_leds.py)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/nao_apps/nao_footsteps.py, /home/matt/ros_ws/devel/lib/nao_apps/nao_footsteps.py)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/nao_apps/nao_speech.py, /home/matt/ros_ws/devel/lib/nao_apps/nao_speech.py)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/nao_apps/nao_diagnostic_updater.py, /home/matt/ros_ws/devel/lib/nao_apps/nao_diagnostic_updater.py)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/nao_apps/nao_behaviors.py, /home/matt/ros_ws/devel/lib/nao_apps/nao_behaviors.py)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/nao_apps/nao_tactile.py, /home/matt/ros_ws/devel/lib/nao_apps/nao_tactile.py)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/nao_apps/nao_walker.py, /home/matt/ros_ws/devel/lib/nao_apps/nao_walker.py)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_apps/lib/nao_apps/nao_alife.py, /home/matt/ros_ws/devel/lib/nao_apps/nao_alife.py)
+Unlinking: /home/matt/ros_ws/devel/share/nao_apps/cmake/nao_appsConfig.cmake
+Unlinking: /home/matt/ros_ws/devel/share/nao_apps/cmake/nao_appsConfig-version.cmake
+Unlinking: /home/matt/ros_ws/devel/lib/pkgconfig/nao_apps.pc
+Unlinking: /home/matt/ros_ws/devel/lib/python3/dist-packages/nao_apps/__init__.py
+Unlinking: /home/matt/ros_ws/devel/lib/nao_apps/cmake.lock
+Unlinking: /home/matt/ros_ws/devel/lib/nao_apps/nao_leds.py
+Unlinking: /home/matt/ros_ws/devel/lib/nao_apps/nao_footsteps.py
+Unlinking: /home/matt/ros_ws/devel/lib/nao_apps/nao_speech.py
+Unlinking: /home/matt/ros_ws/devel/lib/nao_apps/nao_diagnostic_updater.py
+Unlinking: /home/matt/ros_ws/devel/lib/nao_apps/nao_behaviors.py
+Unlinking: /home/matt/ros_ws/devel/lib/nao_apps/nao_tactile.py
+Unlinking: /home/matt/ros_ws/devel/lib/nao_apps/nao_walker.py
+Unlinking: /home/matt/ros_ws/devel/lib/nao_apps/nao_alife.py

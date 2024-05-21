@@ -1,0 +1,10 @@
+Symlinking /home/matt/rob545_ws/devel/share/jamie_description/cmake/jamie_descriptionConfig.cmake
+Symlinking /home/matt/rob545_ws/devel/share/jamie_description/cmake/jamie_descriptionConfig-version.cmake
+Symlinking /home/matt/rob545_ws/devel/lib/pkgconfig/jamie_description.pc
+Cleaning: (/home/matt/ros_ws/devel/.private/jamie_description/cmake.lock, /home/matt/ros_ws/devel/./cmake.lock)
+Cleaning: (/home/matt/ros_ws/devel/.private/jamie_description/share/jamie_description/cmake/jamie_descriptionConfig.cmake, /home/matt/ros_ws/devel/share/jamie_description/cmake/jamie_descriptionConfig.cmake)
+Cleaning: (/home/matt/ros_ws/devel/.private/jamie_description/share/jamie_description/cmake/jamie_descriptionConfig-version.cmake, /home/matt/ros_ws/devel/share/jamie_description/cmake/jamie_descriptionConfig-version.cmake)
+Cleaning: (/home/matt/ros_ws/devel/.private/jamie_description/lib/pkgconfig/jamie_description.pc, /home/matt/ros_ws/devel/lib/pkgconfig/jamie_description.pc)
+Unlinking: /home/matt/ros_ws/devel/share/jamie_description/cmake/jamie_descriptionConfig.cmake
+Unlinking: /home/matt/ros_ws/devel/share/jamie_description/cmake/jamie_descriptionConfig-version.cmake
+Unlinking: /home/matt/ros_ws/devel/lib/pkgconfig/jamie_description.pc

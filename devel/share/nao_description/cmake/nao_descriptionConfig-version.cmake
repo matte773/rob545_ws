@@ -1,0 +1,1 @@
+/home/matt/rob545_ws/devel/.private/nao_description/share/nao_description/cmake/nao_descriptionConfig-version.cmake

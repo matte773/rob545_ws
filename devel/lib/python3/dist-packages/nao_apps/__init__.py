@@ -1,0 +1,1 @@
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/python3/dist-packages/nao_apps/__init__.py

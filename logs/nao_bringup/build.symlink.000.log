@@ -1,0 +1,10 @@
+Symlinking /home/matt/rob545_ws/devel/share/nao_bringup/cmake/nao_bringupConfig.cmake
+Symlinking /home/matt/rob545_ws/devel/share/nao_bringup/cmake/nao_bringupConfig-version.cmake
+Symlinking /home/matt/rob545_ws/devel/lib/pkgconfig/nao_bringup.pc
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_bringup/cmake.lock, /home/matt/ros_ws/devel/./cmake.lock)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_bringup/share/nao_bringup/cmake/nao_bringupConfig.cmake, /home/matt/ros_ws/devel/share/nao_bringup/cmake/nao_bringupConfig.cmake)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_bringup/share/nao_bringup/cmake/nao_bringupConfig-version.cmake, /home/matt/ros_ws/devel/share/nao_bringup/cmake/nao_bringupConfig-version.cmake)
+Cleaning: (/home/matt/ros_ws/devel/.private/nao_bringup/lib/pkgconfig/nao_bringup.pc, /home/matt/ros_ws/devel/lib/pkgconfig/nao_bringup.pc)
+Unlinking: /home/matt/ros_ws/devel/share/nao_bringup/cmake/nao_bringupConfig.cmake
+Unlinking: /home/matt/ros_ws/devel/share/nao_bringup/cmake/nao_bringupConfig-version.cmake
+Unlinking: /home/matt/ros_ws/devel/lib/pkgconfig/nao_bringup.pc
