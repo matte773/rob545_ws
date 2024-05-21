@@ -10,26 +10,3 @@ Symlinking /home/matt/rob545_ws/devel/./local_setup.zsh
 Symlinking /home/matt/rob545_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
 Symlinking /home/matt/rob545_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
 Symlinking /home/matt/rob545_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/cmake.lock, /home/matt/ros_ws/devel/./cmake.lock)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/setup.zsh, /home/matt/ros_ws/devel/./setup.zsh)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/env.sh, /home/matt/ros_ws/devel/./env.sh)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/local_setup.sh, /home/matt/ros_ws/devel/./local_setup.sh)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/_setup_util.py, /home/matt/ros_ws/devel/./_setup_util.py)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/setup.sh, /home/matt/ros_ws/devel/./setup.sh)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/setup.bash, /home/matt/ros_ws/devel/./setup.bash)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/local_setup.bash, /home/matt/ros_ws/devel/./local_setup.bash)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/local_setup.zsh, /home/matt/ros_ws/devel/./local_setup.zsh)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake, /home/matt/ros_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake, /home/matt/ros_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake)
-Cleaning: (/home/matt/ros_ws/devel/.private/catkin_tools_prebuild/lib/pkgconfig/catkin_tools_prebuild.pc, /home/matt/ros_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc)
-Unlinking: /home/matt/ros_ws/devel/./setup.zsh
-Unlinking: /home/matt/ros_ws/devel/./env.sh
-Unlinking: /home/matt/ros_ws/devel/./local_setup.sh
-Unlinking: /home/matt/ros_ws/devel/./_setup_util.py
-Unlinking: /home/matt/ros_ws/devel/./setup.sh
-Unlinking: /home/matt/ros_ws/devel/./setup.bash
-Unlinking: /home/matt/ros_ws/devel/./local_setup.bash
-Unlinking: /home/matt/ros_ws/devel/./local_setup.zsh
-Unlinking: /home/matt/ros_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
-Unlinking: /home/matt/ros_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
-Unlinking: /home/matt/ros_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc

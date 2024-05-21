@@ -1,0 +1,5 @@
+nao_robot/nao_bringup
+/home/matt/rob545_ws/devel/.private/nao_bringup/cmake.lock /home/matt/rob545_ws/devel/./cmake.lock
+/home/matt/rob545_ws/devel/.private/nao_bringup/share/nao_bringup/cmake/nao_bringupConfig.cmake /home/matt/rob545_ws/devel/share/nao_bringup/cmake/nao_bringupConfig.cmake
+/home/matt/rob545_ws/devel/.private/nao_bringup/share/nao_bringup/cmake/nao_bringupConfig-version.cmake /home/matt/rob545_ws/devel/share/nao_bringup/cmake/nao_bringupConfig-version.cmake
+/home/matt/rob545_ws/devel/.private/nao_bringup/lib/pkgconfig/nao_bringup.pc /home/matt/rob545_ws/devel/lib/pkgconfig/nao_bringup.pc

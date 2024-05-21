@@ -1,0 +1,15 @@
+nao_robot/nao_apps
+/home/matt/rob545_ws/devel/.private/nao_apps/cmake.lock /home/matt/rob545_ws/devel/./cmake.lock
+/home/matt/rob545_ws/devel/.private/nao_apps/share/nao_apps/cmake/nao_appsConfig.cmake /home/matt/rob545_ws/devel/share/nao_apps/cmake/nao_appsConfig.cmake
+/home/matt/rob545_ws/devel/.private/nao_apps/share/nao_apps/cmake/nao_appsConfig-version.cmake /home/matt/rob545_ws/devel/share/nao_apps/cmake/nao_appsConfig-version.cmake
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/pkgconfig/nao_apps.pc /home/matt/rob545_ws/devel/lib/pkgconfig/nao_apps.pc
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/python3/dist-packages/nao_apps/__init__.py /home/matt/rob545_ws/devel/lib/python3/dist-packages/nao_apps/__init__.py
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/nao_apps/cmake.lock /home/matt/rob545_ws/devel/lib/nao_apps/cmake.lock
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/nao_apps/nao_leds.py /home/matt/rob545_ws/devel/lib/nao_apps/nao_leds.py
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/nao_apps/nao_footsteps.py /home/matt/rob545_ws/devel/lib/nao_apps/nao_footsteps.py
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/nao_apps/nao_speech.py /home/matt/rob545_ws/devel/lib/nao_apps/nao_speech.py
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/nao_apps/nao_diagnostic_updater.py /home/matt/rob545_ws/devel/lib/nao_apps/nao_diagnostic_updater.py
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/nao_apps/nao_behaviors.py /home/matt/rob545_ws/devel/lib/nao_apps/nao_behaviors.py
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/nao_apps/nao_tactile.py /home/matt/rob545_ws/devel/lib/nao_apps/nao_tactile.py
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/nao_apps/nao_walker.py /home/matt/rob545_ws/devel/lib/nao_apps/nao_walker.py
+/home/matt/rob545_ws/devel/.private/nao_apps/lib/nao_apps/nao_alife.py /home/matt/rob545_ws/devel/lib/nao_apps/nao_alife.py
