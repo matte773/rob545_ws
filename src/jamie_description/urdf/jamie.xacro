@@ -6,7 +6,7 @@
 <xacro:include filename="$(find jamie_description)/urdf/jamie.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="3.1106206943576354e-10 -0.001705459809340095 0.41858451888973675" rpy="0 0 0"/>
+    <origin xyz="-0.011688232223622823 -0.04997378243790669 -0.12088695327313781" rpy="0 0 0"/>
     <mass value="0.8307183918921939"/>
     <inertia ixx="0.000743" iyy="0.00316" izz="0.00283" ixy="0.0" iyz="3.2e-05" ixz="-0.0"/>
   </inertial>
@@ -27,19 +27,19 @@
 
 <link name="right_shoulder_link_1">
   <inertial>
-    <origin xyz="0.0006456837649729541 0.02009213962856949 -0.018618587576526346" rpy="0 0 0"/>
+    <origin xyz="0.0006454512302885018 0.020091817000003336 -0.018619059739400937" rpy="0 0 0"/>
     <mass value="0.18884280500199657"/>
     <inertia ixx="7.8e-05" iyy="7.4e-05" izz="5.8e-05" ixy="-0.0" iyz="6e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.108676 0.005103 -0.673203" rpy="0 0 0"/>
+    <origin xyz="-0.096988 0.053371 -0.133732" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_shoulder_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.108676 0.005103 -0.673203" rpy="0 0 0"/>
+    <origin xyz="-0.096988 0.053371 -0.133732" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_shoulder_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -48,19 +48,19 @@
 
 <link name="left_shoulder_link_1">
   <inertial>
-    <origin xyz="-0.0006454231580610287 0.01898370677952162 -0.0197473856344742" rpy="0 0 0"/>
+    <origin xyz="-0.0006456556927465912 0.018983384150954692 -0.019747857797348778" rpy="0 0 0"/>
     <mass value="0.1888429783699795"/>
     <inertia ixx="7.8e-05" iyy="7.5e-05" izz="5.8e-05" ixy="0.0" iyz="5e-06" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.106476 0.004911 -0.673264" rpy="0 0 0"/>
+    <origin xyz="0.118164 0.053179 -0.133793" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_shoulder_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.106476 0.004911 -0.673264" rpy="0 0 0"/>
+    <origin xyz="0.118164 0.053179 -0.133793" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_shoulder_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -69,19 +69,19 @@
 
 <link name="chest_link_1">
   <inertial>
-    <origin xyz="1.1937011133657423e-07 0.02906262980492068 0.04593037735780203" rpy="0 0 0"/>
+    <origin xyz="-1.1316457350710185e-07 0.02906330717635416 0.04592990519492751" rpy="0 0 0"/>
     <mass value="1.8523759675731215"/>
     <inertia ixx="0.001182" iyy="0.003891" izz="0.004278" ixy="-0.0" iyz="5.8e-05" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0011 0.009084 -0.623779" rpy="0 0 0"/>
+    <origin xyz="0.010588 0.057353 -0.084308" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/chest_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.0011 0.009084 -0.623779" rpy="0 0 0"/>
+    <origin xyz="0.010588 0.057353 -0.084308" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/chest_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -90,19 +90,19 @@
 
 <link name="spine_connector_link_1">
   <inertial>
-    <origin xyz="-0.016505894109137692 0.009764624496856791 0.010210578077430865" rpy="0 0 0"/>
+    <origin xyz="-0.016506126643822533 0.00976530186829027 0.010210105914556483" rpy="0 0 0"/>
     <mass value="0.2675520479560331"/>
     <inertia ixx="0.000166" iyy="0.000125" izz="0.000109" ixy="1.4e-05" iyz="-1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0236 -0.005166 -0.623779" rpy="0 0 0"/>
+    <origin xyz="-0.011912 0.043103 -0.084308" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/spine_connector_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.0236 -0.005166 -0.623779" rpy="0 0 0"/>
+    <origin xyz="-0.011912 0.043103 -0.084308" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/spine_connector_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -111,19 +111,19 @@
 
 <link name="left_upper_leg_link_1">
   <inertial>
-    <origin xyz="-0.01184936032213374 0.002829694297358378 -0.08923111810416501" rpy="0 0 0"/>
+    <origin xyz="-0.011849592856818726 0.002829371668791672 -0.08923059026703958" rpy="0 0 0"/>
     <mass value="0.40754083950250325"/>
     <inertia ixx="0.001416" iyy="0.001457" izz="0.000338" ixy="-1.7e-05" iyz="9e-05" ixz="0.00022"/>
   </inertial>
   <visual>
-    <origin xyz="0.0433 -0.014351 -0.394608" rpy="0 0 0"/>
+    <origin xyz="0.054988 0.033917 0.144864" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_upper_leg_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.0433 -0.014351 -0.394608" rpy="0 0 0"/>
+    <origin xyz="0.054988 0.033917 0.144864" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_upper_leg_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -132,19 +132,19 @@
 
 <link name="right_upper_leg_link_1">
   <inertial>
-    <origin xyz="0.011850015567623058 0.0028296942840022182 -0.08923111810698131" rpy="0 0 0"/>
+    <origin xyz="0.011849783032938543 0.002829371655435887 -0.08923059026985594" rpy="0 0 0"/>
     <mass value="0.40754083973100536"/>
     <inertia ixx="0.001416" iyy="0.001457" izz="0.000338" ixy="1.7e-05" iyz="9e-05" ixz="-0.00022"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0433 -0.014351 -0.394608" rpy="0 0 0"/>
+    <origin xyz="-0.031612 0.033917 0.144864" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_upper_leg_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.0433 -0.014351 -0.394608" rpy="0 0 0"/>
+    <origin xyz="-0.031612 0.033917 0.144864" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_upper_leg_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -153,19 +153,19 @@
 
 <link name="spine_link_1">
   <inertial>
-    <origin xyz="0.027174999999975347 0.0030514827161806863 0.08500010628608651" rpy="0 0 0"/>
+    <origin xyz="0.027174767465290472 0.0030521600876141017 0.08499963412321193" rpy="0 0 0"/>
     <mass value="0.2851299685332731"/>
     <inertia ixx="0.00083" iyy="0.00095" izz="0.000199" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.02725 -0.005166 -0.453779" rpy="0 0 0"/>
+    <origin xyz="0.038938 0.043103 0.085692" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/spine_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.02725 -0.005166 -0.453779" rpy="0 0 0"/>
+    <origin xyz="0.038938 0.043103 0.085692" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/spine_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -174,19 +174,19 @@
 
 <link name="neck_servo_v1_1">
   <inertial>
-    <origin xyz="0.004498988710398971 -0.02468095859865068 -0.008128190094231602" rpy="0 0 0"/>
+    <origin xyz="0.004498756175713993 -0.024681281227217043 -0.00812866225710629" rpy="0 0 0"/>
     <mass value="0.25721902111029343"/>
     <inertia ixx="7.2e-05" iyy="4.5e-05" izz="4.3e-05" ixy="0.0" iyz="2e-06" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.0034 -0.039771 -0.697879" rpy="0 0 0"/>
+    <origin xyz="0.015088 0.008497 -0.158408" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/neck_servo_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.0034 -0.039771 -0.697879" rpy="0 0 0"/>
+    <origin xyz="0.015088 0.008497 -0.158408" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/neck_servo_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -195,19 +195,19 @@
 
 <link name="neck_link_1">
   <inertial>
-    <origin xyz="7.139401547438936e-06 0.008823511285371906 0.007600475444214827" rpy="0 0 0"/>
+    <origin xyz="7.906866862536846e-06 0.008823188656805377 0.007600003281340223" rpy="0 0 0"/>
     <mass value="0.09691779368254524"/>
     <inertia ixx="2.3e-05" iyy="5.3e-05" izz="5.3e-05" ixy="0.0" iyz="-1e-06" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.001102 -0.005338 -0.713679" rpy="0 0 0"/>
+    <origin xyz="0.010587 0.04293 -0.174208" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/neck_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.001102 -0.005338 -0.713679" rpy="0 0 0"/>
+    <origin xyz="0.010587 0.04293 -0.174208" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/neck_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -216,19 +216,19 @@
 
 <link name="neck_nod_tilt_link_1">
   <inertial>
-    <origin xyz="0.016877140142823113 -0.009828122182642944 0.010518297464361615" rpy="0 0 0"/>
+    <origin xyz="0.016876907608138172 -0.009827444811209469 0.010517825301487094" rpy="0 0 0"/>
     <mass value="0.2884047672762395"/>
     <inertia ixx="0.000176" iyy="0.000137" izz="0.000111" ixy="1.6e-05" iyz="-5e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.021885 -0.021358 -0.738679" rpy="0 0 0"/>
+    <origin xyz="0.033573 0.026911 -0.199208" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/neck_nod_tilt_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.021885 -0.021358 -0.738679" rpy="0 0 0"/>
+    <origin xyz="0.033573 0.026911 -0.199208" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/neck_nod_tilt_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -237,19 +237,19 @@
 
 <link name="eye_holder_link_1">
   <inertial>
-    <origin xyz="5.980346964292956e-06 0.006609529389791653 1.0628523761102571e-07" rpy="0 0 0"/>
+    <origin xyz="5.747812279516609e-06 0.006610206761225312 -3.658776367987393e-07" rpy="0 0 0"/>
     <mass value="0.16148324488991492"/>
     <inertia ixx="6.3e-05" iyy="0.000324" izz="0.000261" ixy="0.0" iyz="-0.0" ixz="5e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.000633 -0.042443 -0.782179" rpy="0 0 0"/>
+    <origin xyz="0.011055 0.005826 -0.242708" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/eye_holder_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.000633 -0.042443 -0.782179" rpy="0 0 0"/>
+    <origin xyz="0.011055 0.005826 -0.242708" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/eye_holder_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -258,19 +258,19 @@
 
 <link name="head_connector_link_1">
   <inertial>
-    <origin xyz="-1.995390094584621e-05 -0.023605835187592815 0.020398942883291915" rpy="0 0 0"/>
+    <origin xyz="-2.018643563084059e-05 -0.023606157816159382 0.0203984707204177" rpy="0 0 0"/>
     <mass value="0.10736239781961848"/>
     <inertia ixx="0.000111" iyy="2e-05" izz="0.000103" ixy="-0.0" iyz="-2e-06" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.000627 -0.035338 -0.759679" rpy="0 0 0"/>
+    <origin xyz="0.011061 0.01293 -0.220208" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/head_connector_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.000627 -0.035338 -0.759679" rpy="0 0 0"/>
+    <origin xyz="0.011061 0.01293 -0.220208" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/head_connector_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -279,19 +279,19 @@
 
 <link name="right_shoulder_servo_v1_1">
   <inertial>
-    <origin xyz="-0.008128374894312111 -0.024681441098353595 -0.004499277410236924" rpy="0 0 0"/>
+    <origin xyz="-0.00812860742899671 -0.02468076372691968 -0.004498749573111471" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="4.3e-05" iyy="4.5e-05" izz="7.2e-05" ixy="2e-06" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.069825 -0.041568 -0.678692" rpy="0 0 0"/>
+    <origin xyz="-0.058137 0.006701 -0.13922" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_shoulder_servo_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.069825 -0.041568 -0.678692" rpy="0 0 0"/>
+    <origin xyz="-0.058137 0.006701 -0.13922" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_shoulder_servo_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -300,19 +300,19 @@
 
 <link name="right_shoulder_connector_link_1">
   <inertial>
-    <origin xyz="0.005752356597002614 0.009619046457646442 0.0024323035384365976" rpy="0 0 0"/>
+    <origin xyz="0.005752124062318106 0.009618723829080245 0.002431831375562188" rpy="0 0 0"/>
     <mass value="0.08077297877855137"/>
     <inertia ixx="3.5e-05" iyy="1.8e-05" izz="3.8e-05" ixy="0.0" iyz="-1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.085625 -0.007134 -0.67419" rpy="0 0 0"/>
+    <origin xyz="-0.073937 0.041134 -0.134719" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_shoulder_connector_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.085625 -0.007134 -0.67419" rpy="0 0 0"/>
+    <origin xyz="-0.073937 0.041134 -0.134719" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_shoulder_connector_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -321,19 +321,19 @@
 
 <link name="upper_right_arm_servo_1">
   <inertial>
-    <origin xyz="-2.278268546790363e-06 0.011733258675074243 -0.025301069113281227" rpy="0 0 0"/>
+    <origin xyz="-2.510803230840186e-06 0.011732936046508276 -0.02530054127615601" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="7.2e-05" iyy="4.5e-05" izz="4.3e-05" ixy="0.0" iyz="2e-06" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.108709 -0.011881 -0.63732" rpy="0 0 0"/>
+    <origin xyz="-0.097021 0.036387 -0.097848" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/upper_right_arm_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.108709 -0.011881 -0.63732" rpy="0 0 0"/>
+    <origin xyz="-0.097021 0.036387 -0.097848" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/upper_right_arm_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -342,19 +342,19 @@
 
 <link name="right_upper_arm_link_1">
   <inertial>
-    <origin xyz="-0.004123117619453984 -0.017587029401361812 -0.026551245795806033" rpy="0 0 0"/>
+    <origin xyz="-0.004123350154138353 -0.017587352029927915 -0.02655071795868074" rpy="0 0 0"/>
     <mass value="0.255754845328822"/>
     <inertia ixx="0.000327" iyy="0.000305" izz="0.000135" ixy="-0.0" iyz="-1.2e-05" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.113208 -0.047597 -0.622022" rpy="0 0 0"/>
+    <origin xyz="-0.10152 0.000671 -0.08255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_upper_arm_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.113208 -0.047597 -0.622022" rpy="0 0 0"/>
+    <origin xyz="-0.10152 0.000671 -0.08255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_upper_arm_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -363,19 +363,19 @@
 
 <link name="right_forearm_servo_1">
   <inertial>
-    <origin xyz="-0.010377890579971877 0.006384262290033325 -0.02426148248101656" rpy="0 0 0"/>
+    <origin xyz="-0.010378123114656357 0.006383939661467209 -0.024261954643891036" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="4.3e-05" iyy="7.1e-05" izz="4.5e-05" ixy="-0.0" iyz="2e-06" ixz="2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.120123 -0.024273 -0.558818" rpy="0 0 0"/>
+    <origin xyz="-0.108435 0.023995 -0.019347" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_forearm_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.120123 -0.024273 -0.558818" rpy="0 0 0"/>
+    <origin xyz="-0.108435 0.023995 -0.019347" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_forearm_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -384,19 +384,19 @@
 
 <link name="forearm_right_v1_1">
   <inertial>
-    <origin xyz="-0.019393772594857486 -0.006187196437031046 -0.04912306430079594" rpy="0 0 0"/>
+    <origin xyz="-0.019394005129541883 -0.006187519065597221 -0.04912253646367075" rpy="0 0 0"/>
     <mass value="0.17753961220642203"/>
     <inertia ixx="0.000376" iyy="0.000381" izz="7.2e-05" ixy="-8e-06" iyz="6.1e-05" ixz="3.4e-05"/>
   </inertial>
   <visual>
-    <origin xyz="-0.133673 -0.03141 -0.524834" rpy="0 0 0"/>
+    <origin xyz="-0.121985 0.016858 0.014638" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/forearm_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.133673 -0.03141 -0.524834" rpy="0 0 0"/>
+    <origin xyz="-0.121985 0.016858 0.014638" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/forearm_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -405,19 +405,19 @@
 
 <link name="left_shoulder_servo_1">
   <inertial>
-    <origin xyz="0.008128625305570812 0.023799042060737886 0.004748468071744338" rpy="0 0 0"/>
+    <origin xyz="0.008128392770885493 0.023799719432171376 0.00474899590886993" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="4.3e-05" iyy="4.5e-05" izz="7.2e-05" ixy="-2e-06" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.067625 0.006684 -0.668792" rpy="0 0 0"/>
+    <origin xyz="0.079313 0.054953 -0.12932" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_shoulder_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.067625 0.006684 -0.668792" rpy="0 0 0"/>
+    <origin xyz="0.079313 0.054953 -0.12932" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_shoulder_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -426,19 +426,19 @@
 
 <link name="left_shoulder_connector_link_1">
   <inertial>
-    <origin xyz="-0.005752909215844815 0.009742918463123843 0.001873897803275404" rpy="0 0 0"/>
+    <origin xyz="-0.005753141750530072 0.009742595834557 0.0018734256404009109" rpy="0 0 0"/>
     <mass value="0.08076633902558729"/>
     <inertia ixx="3.5e-05" iyy="1.8e-05" izz="3.8e-05" ixy="-0.0" iyz="-0.0" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.083425 -0.007363 -0.673543" rpy="0 0 0"/>
+    <origin xyz="0.095113 0.040905 -0.134072" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_shoulder_connector_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.083425 -0.007363 -0.673543" rpy="0 0 0"/>
+    <origin xyz="0.095113 0.040905 -0.134072" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_shoulder_connector_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -447,19 +447,19 @@
 
 <link name="upper_left_arm_servo_1">
   <inertial>
-    <origin xyz="-2.644539376414623e-06 0.010253223637285772 -0.02593581770889497" rpy="0 0 0"/>
+    <origin xyz="-2.877074061907736e-06 0.010252901008719402 -0.0259352898717696" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="7.2e-05" iyy="4.5e-05" izz="4.3e-05" ixy="0.0" iyz="2e-06" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.106509 -0.009973 -0.63646" rpy="0 0 0"/>
+    <origin xyz="0.118197 0.038295 -0.096988" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/upper_left_arm_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.106509 -0.009973 -0.63646" rpy="0 0 0"/>
+    <origin xyz="0.118197 0.038295 -0.096988" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/upper_left_arm_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -468,19 +468,19 @@
 
 <link name="left_forearm_servo_1">
   <inertial>
-    <origin xyz="0.010378222290075026 0.004974965690913279 -0.024589586549092157" rpy="0 0 0"/>
+    <origin xyz="0.010377989755389824 0.00497564306234646 -0.024590058711966623" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="4.3e-05" iyy="7.2e-05" izz="4.5e-05" ixy="0.0" iyz="1e-06" ixz="-2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.117926 -0.017813 -0.557374" rpy="0 0 0"/>
+    <origin xyz="0.129614 0.030456 -0.017903" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_forearm_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.117926 -0.017813 -0.557374" rpy="0 0 0"/>
+    <origin xyz="0.129614 0.030456 -0.017903" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_forearm_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -489,19 +489,19 @@
 
 <link name="forearm_left_v1_1">
   <inertial>
-    <origin xyz="0.01939411054158198 -0.009012659457897294 -0.04868340483390565" rpy="0 0 0"/>
+    <origin xyz="0.01939387800689696 -0.009012982086464168 -0.048683876996780125" rpy="0 0 0"/>
     <mass value="0.17753962618878713"/>
     <inertia ixx="0.000376" iyy="0.000387" izz="6.6e-05" ixy="6e-06" iyz="4.2e-05" ixz="-3.5e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.131476 -0.022973 -0.523034" rpy="0 0 0"/>
+    <origin xyz="0.143164 0.025295 0.016437" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/forearm_left_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.131476 -0.022973 -0.523034" rpy="0 0 0"/>
+    <origin xyz="0.143164 0.025295 0.016437" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/forearm_left_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -510,19 +510,19 @@
 
 <link name="left_upper_arm_link_1">
   <inertial>
-    <origin xyz="0.004123476283687741 -0.01909002778792557 -0.025491610867799608" rpy="0 0 0"/>
+    <origin xyz="0.004123243749002498 -0.019090350416492475 -0.025492083030674344" rpy="0 0 0"/>
     <mass value="0.2557548453425491"/>
     <inertia ixx="0.000327" iyy="0.000303" izz="0.000137" ixy="-0.0" iyz="-2.1e-05" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.111011 -0.044746 -0.619126" rpy="0 0 0"/>
+    <origin xyz="0.122699 0.003522 -0.079655" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_upper_arm_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.111011 -0.044746 -0.619126" rpy="0 0 0"/>
+    <origin xyz="0.122699 0.003522 -0.079655" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_upper_arm_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -531,19 +531,19 @@
 
 <link name="left_knee_servo_1">
   <inertial>
-    <origin xyz="0.010378126315553564 -0.004499302185764352 -0.024680793093318193" rpy="0 0 0"/>
+    <origin xyz="0.01037789378086855 -0.004498624814330811 -0.024681265256192964" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="4.3e-05" iyy="7.2e-05" izz="4.5e-05" ixy="0.0" iyz="-0.0" ixz="-2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.054936 -0.018872 -0.247266" rpy="0 0 0"/>
+    <origin xyz="0.066624 0.029397 0.292205" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_knee_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.054936 -0.018872 -0.247266" rpy="0 0 0"/>
+    <origin xyz="0.066624 0.029397 0.292205" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_knee_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -552,19 +552,19 @@
 
 <link name="left_lower_leg_link_1">
   <inertial>
-    <origin xyz="0.02351551052231409 0.004563843952148504 -0.07198223465406314" rpy="0 0 0"/>
+    <origin xyz="0.023515277987629278 0.0045635213235817595 -0.07198270681693797" rpy="0 0 0"/>
     <mass value="0.3617681277031548"/>
     <inertia ixx="0.001335" iyy="0.00132" izz="0.000226" ixy="0.0" iyz="-6.8e-05" ixz="-6e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.068486 -0.01437 -0.212833" rpy="0 0 0"/>
+    <origin xyz="0.080174 0.033898 0.326638" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_lower_leg_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.068486 -0.01437 -0.212833" rpy="0 0 0"/>
+    <origin xyz="0.080174 0.033898 0.326638" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_lower_leg_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -573,19 +573,19 @@
 
 <link name="left_ankle_servo_1">
   <inertial>
-    <origin xyz="0.010378126315530083 -0.004498761536333641 -0.02468093565525041" rpy="0 0 0"/>
+    <origin xyz="0.010377893780845047 -0.00449908416490016 -0.024681407818125167" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="4.3e-05" iyy="7.2e-05" izz="4.5e-05" ixy="0.0" iyz="-0.0" ixz="-2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.055986 -0.01997 -0.069433" rpy="0 0 0"/>
+    <origin xyz="0.067674 0.028298 0.470038" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_ankle_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.055986 -0.01997 -0.069433" rpy="0 0 0"/>
+    <origin xyz="0.067674 0.028298 0.470038" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_ankle_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -594,19 +594,19 @@
 
 <link name="left_foot_link_1">
   <inertial>
-    <origin xyz="0.021983493053837323 0.02638248086503781 -0.022913953686982895" rpy="0 0 0"/>
+    <origin xyz="0.021983260519152656 0.026383158236471093 -0.0229144258498577" rpy="0 0 0"/>
     <mass value="0.047635684999489704"/>
     <inertia ixx="8.3e-05" iyy="1.9e-05" izz="9e-05" ixy="3e-06" iyz="4e-06" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.069536 -0.015469 -0.035" rpy="0 0 0"/>
+    <origin xyz="0.081224 0.0328 0.504471" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_foot_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.069536 -0.015469 -0.035" rpy="0 0 0"/>
+    <origin xyz="0.081224 0.0328 0.504471" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/left_foot_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -615,19 +615,19 @@
 
 <link name="right_knee_servo_1">
   <inertial>
-    <origin xyz="-0.010278126315679197 -0.0045015567038609785 -0.024680793093329045" rpy="0 0 0"/>
+    <origin xyz="-0.010278358850363885 -0.004500879332427404 -0.024681265256203677" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="4.3e-05" iyy="7.2e-05" izz="4.5e-05" ixy="0.0" iyz="0.0" ixz="2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.054936 -0.018872 -0.247266" rpy="0 0 0"/>
+    <origin xyz="-0.043248 0.029397 0.292205" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_knee_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.054936 -0.018872 -0.247266" rpy="0 0 0"/>
+    <origin xyz="-0.043248 0.029397 0.292205" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_knee_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -636,19 +636,19 @@
 
 <link name="right_lower_leg_link_1">
   <inertial>
-    <origin xyz="-0.023515609763809675 0.0045635349640595554 -0.07198255783250365" rpy="0 0 0"/>
+    <origin xyz="-0.023515842298494176 0.004563212335493196 -0.07198302999537853" rpy="0 0 0"/>
     <mass value="0.3617641931033871"/>
     <inertia ixx="0.001335" iyy="0.00132" izz="0.000226" ixy="-0.0" iyz="-6.8e-05" ixz="6e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.068586 -0.014373 -0.212833" rpy="0 0 0"/>
+    <origin xyz="-0.056898 0.033895 0.326638" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_lower_leg_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.068586 -0.014373 -0.212833" rpy="0 0 0"/>
+    <origin xyz="-0.056898 0.033895 0.326638" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_lower_leg_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -657,19 +657,19 @@
 
 <link name="right_ankle_servo_1">
   <inertial>
-    <origin xyz="-0.010378126315467459 0.0044989026467016635 -0.024680935655238316" rpy="0 0 0"/>
+    <origin xyz="-0.010378358850152168 0.004498580018135266 -0.024681407818113066" rpy="0 0 0"/>
     <mass value="0.2572190211102965"/>
     <inertia ixx="4.3e-05" iyy="7.2e-05" izz="4.5e-05" ixy="0.0" iyz="0.0" ixz="2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.056086 -0.010973 -0.069433" rpy="0 0 0"/>
+    <origin xyz="-0.044398 0.037295 0.470038" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_ankle_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.056086 -0.010973 -0.069433" rpy="0 0 0"/>
+    <origin xyz="-0.044398 0.037295 0.470038" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_ankle_servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -678,19 +678,19 @@
 
 <link name="right_foot_link_1">
   <inertial>
-    <origin xyz="-0.02198346139658839 0.026383326838710502 -0.022913954376800168" rpy="0 0 0"/>
+    <origin xyz="-0.021983693931272683 0.02638300421014424 -0.022914426539675126" rpy="0 0 0"/>
     <mass value="0.04763567628033751"/>
     <inertia ixx="8.3e-05" iyy="1.9e-05" izz="9e-05" ixy="-3e-06" iyz="4e-06" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.069636 -0.015474 -0.035" rpy="0 0 0"/>
+    <origin xyz="-0.057948 0.032794 0.504471" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_foot_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.069636 -0.015474 -0.035" rpy="0 0 0"/>
+    <origin xyz="-0.057948 0.032794 0.504471" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://jamie_description/meshes/right_foot_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -717,7 +717,7 @@
   <origin xyz="-0.0225 -0.01425 0.0" rpy="0 0 0"/>
   <parent link="spine_connector_link_1"/>
   <child link="chest_link_1"/>
-  <axis xyz="0.0 1.0 -0.0"/>
+  <axis xyz="0.0 1.0 0.0"/>
   <limit upper="0.698132" lower="-0.698132" effort="100" velocity="100"/>
 </joint>
 
@@ -729,42 +729,44 @@
   <limit upper="0.698132" lower="-0.698132" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 14" type="continuous">
-  <origin xyz="-0.0433 0.014351 0.394608" rpy="0 0 0"/>
+<joint name="Revolute 14" type="revolute">
+  <origin xyz="-0.054988 -0.033917 -0.144864" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="left_upper_leg_link_1"/>
   <axis xyz="-1.0 0.0 -0.0"/>
+  <limit upper="0.0" lower="-1.396263" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 17" type="continuous">
-  <origin xyz="0.0433 0.014351 0.394608" rpy="0 0 0"/>
+<joint name="Revolute 17" type="revolute">
+  <origin xyz="0.031612 -0.033917 -0.144864" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="right_upper_leg_link_1"/>
   <axis xyz="-1.0 0.0 -0.0"/>
+  <limit upper="0.0" lower="-1.396263" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 1" type="continuous">
-  <origin xyz="-0.02725 0.005166 0.453779" rpy="0 0 0"/>
+<joint name="Revolute 1" type="fixed">
+  <origin xyz="-0.038938 -0.043103 -0.085692" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="spine_link_1"/>
-  <axis xyz="1.0 -0.0 0.0"/>
 </joint>
 
 <joint name="Rigid 1" type="fixed">
-  <origin xyz="-0.0045 0.048855 0.0741" rpy="0 0 0"/>
+  <origin xyz="-0.0045 0.048856 0.0741" rpy="0 0 0"/>
   <parent link="chest_link_1"/>
   <child link="neck_servo_v1_1"/>
 </joint>
 
-<joint name="Revolute 6" type="continuous">
-  <origin xyz="0.004502 -0.034433 0.0158" rpy="0 0 0"/>
+<joint name="Revolute 6" type="revolute">
+  <origin xyz="0.004501 -0.034433 0.0158" rpy="0 0 0"/>
   <parent link="neck_servo_v1_1"/>
   <child link="neck_link_1"/>
   <axis xyz="-0.0 0.0 -1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Revolute 7" type="revolute">
-  <origin xyz="-0.022987 0.01602 0.025" rpy="0 0 0"/>
+  <origin xyz="-0.022986 0.016019 0.025" rpy="0 0 0"/>
   <parent link="neck_link_1"/>
   <child link="neck_nod_tilt_link_1"/>
   <axis xyz="-1.0 0.000856 0.0"/>
@@ -772,36 +774,39 @@
 </joint>
 
 <joint name="Rigid 2" type="fixed">
-  <origin xyz="6e-06 0.007105 0.0225" rpy="0 0 0"/>
+  <origin xyz="6e-06 0.007104 0.0225" rpy="0 0 0"/>
   <parent link="head_connector_link_1"/>
   <child link="eye_holder_link_1"/>
 </joint>
 
-<joint name="Revolute 13" type="continuous">
-  <origin xyz="0.022512 0.01398 0.021" rpy="0 0 0"/>
+<joint name="Revolute 13" type="revolute">
+  <origin xyz="0.022512 0.013981 0.021" rpy="0 0 0"/>
   <parent link="neck_nod_tilt_link_1"/>
   <child link="head_connector_link_1"/>
   <axis xyz="-0.000856 -1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 3" type="fixed">
-  <origin xyz="0.068725 0.050652 0.054913" rpy="0 0 0"/>
+  <origin xyz="0.068725 0.050652 0.054912" rpy="0 0 0"/>
   <parent link="chest_link_1"/>
   <child link="right_shoulder_servo_v1_1"/>
 </joint>
 
-<joint name="Revolute 3" type="continuous">
-  <origin xyz="0.0158 -0.034434 -0.004502" rpy="0 0 0"/>
+<joint name="Revolute 3" type="revolute">
+  <origin xyz="0.0158 -0.034433 -0.004501" rpy="0 0 0"/>
   <parent link="right_shoulder_servo_v1_1"/>
   <child link="right_shoulder_connector_link_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="0.0" lower="-3.141593" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 21" type="continuous">
-  <origin xyz="3.3e-05 0.016984 -0.035883" rpy="0 0 0"/>
+<joint name="Revolute 21" type="revolute">
+  <origin xyz="3.3e-05 0.016984 -0.035884" rpy="0 0 0"/>
   <parent link="right_shoulder_link_1"/>
   <child link="upper_right_arm_servo_1"/>
   <axis xyz="-0.0 0.076933 -0.997036"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 4" type="fixed">
@@ -811,68 +816,73 @@
 </joint>
 
 <joint name="Rigid 5" type="fixed">
-  <origin xyz="0.006915 -0.023324 -0.063204" rpy="0 0 0"/>
+  <origin xyz="0.006915 -0.023324 -0.063203" rpy="0 0 0"/>
   <parent link="right_upper_arm_link_1"/>
   <child link="right_forearm_servo_1"/>
 </joint>
 
-<joint name="Revolute 22" type="continuous">
-  <origin xyz="0.01355 0.007137 -0.033984" rpy="0 0 0"/>
+<joint name="Revolute 22" type="revolute">
+  <origin xyz="0.01355 0.007137 -0.033985" rpy="0 0 0"/>
   <parent link="right_forearm_servo_1"/>
   <child link="forearm_right_v1_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="0.0" lower="-2.530727" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 6" type="fixed">
-  <origin xyz="-0.068725 0.0024 0.045013" rpy="0 0 0"/>
+  <origin xyz="-0.068725 0.0024 0.045012" rpy="0 0 0"/>
   <parent link="chest_link_1"/>
   <child link="left_shoulder_servo_1"/>
 </joint>
 
-<joint name="Revolute 20" type="continuous">
-  <origin xyz="-0.0158 0.014047 0.004751" rpy="0 0 0"/>
+<joint name="Revolute 20" type="revolute">
+  <origin xyz="-0.0158 0.014048 0.004752" rpy="0 0 0"/>
   <parent link="left_shoulder_servo_1"/>
   <child link="left_shoulder_connector_link_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 9" type="continuous">
-  <origin xyz="-3.3e-05 0.014884 -0.036804" rpy="0 0 0"/>
+<joint name="Revolute 9" type="revolute">
+  <origin xyz="-3.3e-05 0.014884 -0.036805" rpy="0 0 0"/>
   <parent link="left_shoulder_link_1"/>
   <child link="upper_left_arm_servo_1"/>
   <axis xyz="-0.0 -0.019247 0.999815"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 8" type="fixed">
-  <origin xyz="-0.006915 -0.026933 -0.061752" rpy="0 0 0"/>
+  <origin xyz="-0.006915 -0.026934 -0.061752" rpy="0 0 0"/>
   <parent link="left_upper_arm_link_1"/>
   <child link="left_forearm_servo_1"/>
 </joint>
 
-<joint name="Revolute 2" type="continuous">
-  <origin xyz="-0.01355 0.00516 -0.03434" rpy="0 0 0"/>
+<joint name="Revolute 2" type="revolute">
+  <origin xyz="-0.01355 0.005161 -0.03434" rpy="0 0 0"/>
   <parent link="left_forearm_servo_1"/>
   <child link="forearm_left_v1_1"/>
   <axis xyz="1.0 -0.0 0.0"/>
+  <limit upper="2.530727" lower="0.0" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 7" type="fixed">
-  <origin xyz="-0.004502 0.034773 -0.017334" rpy="0 0 0"/>
+  <origin xyz="-0.004502 0.034773 -0.017333" rpy="0 0 0"/>
   <parent link="upper_left_arm_servo_1"/>
   <child link="left_upper_arm_link_1"/>
 </joint>
 
 <joint name="Rigid 9" type="fixed">
-  <origin xyz="-0.011636 0.004521 -0.147342" rpy="0 0 0"/>
+  <origin xyz="-0.011636 0.00452 -0.147341" rpy="0 0 0"/>
   <parent link="left_upper_leg_link_1"/>
   <child link="left_knee_servo_1"/>
 </joint>
 
-<joint name="Revolute 5" type="continuous">
-  <origin xyz="-0.01355 -0.004502 -0.034433" rpy="0 0 0"/>
+<joint name="Revolute 5" type="revolute">
+  <origin xyz="-0.01355 -0.004501 -0.034433" rpy="0 0 0"/>
   <parent link="left_knee_servo_1"/>
   <child link="left_lower_leg_link_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
+  <limit upper="0.0" lower="-1.658063" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 10" type="fixed">
@@ -881,24 +891,26 @@
   <child link="left_ankle_servo_1"/>
 </joint>
 
-<joint name="Revolute 10" type="continuous">
-  <origin xyz="-0.01355 -0.004501 -0.034433" rpy="0 0 0"/>
+<joint name="Revolute 10" type="revolute">
+  <origin xyz="-0.01355 -0.004502 -0.034433" rpy="0 0 0"/>
   <parent link="left_ankle_servo_1"/>
   <child link="left_foot_link_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
+  <limit upper="0.785398" lower="-0.523599" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 11" type="fixed">
-  <origin xyz="0.011636 0.004521 -0.147342" rpy="0 0 0"/>
+  <origin xyz="0.011636 0.00452 -0.147341" rpy="0 0 0"/>
   <parent link="right_upper_leg_link_1"/>
   <child link="right_knee_servo_1"/>
 </joint>
 
-<joint name="Revolute 18" type="continuous">
-  <origin xyz="0.01365 -0.004499 -0.034433" rpy="0 0 0"/>
+<joint name="Revolute 18" type="revolute">
+  <origin xyz="0.01365 -0.004498 -0.034433" rpy="0 0 0"/>
   <parent link="right_knee_servo_1"/>
   <child link="right_lower_leg_link_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="1.658063" lower="0.0" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 12" type="fixed">
@@ -907,11 +919,12 @@
   <child link="right_ankle_servo_1"/>
 </joint>
 
-<joint name="Revolute 19" type="continuous">
+<joint name="Revolute 19" type="revolute">
   <origin xyz="0.01355 0.004501 -0.034433" rpy="0 0 0"/>
   <parent link="right_ankle_servo_1"/>
   <child link="right_foot_link_1"/>
   <axis xyz="-1.0 0.0 -0.0"/>
+  <limit upper="0.785398" lower="-0.523599" effort="100" velocity="100"/>
 </joint>
 
 </robot>

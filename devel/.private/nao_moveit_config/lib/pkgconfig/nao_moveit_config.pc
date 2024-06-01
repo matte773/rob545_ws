@@ -1,0 +1,8 @@
+prefix=/home/matt/rob545_ws/devel/.private/nao_moveit_config
+
+Name: nao_moveit_config
+Description: Description of nao_moveit_config
+Version: 0.0.11
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

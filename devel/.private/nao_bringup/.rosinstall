@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/matt/rob545_ws/devel/.private/nao_bringup/setup.sh

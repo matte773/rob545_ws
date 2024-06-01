@@ -1,0 +1,8 @@
+prefix=/home/matt/rob545_ws/install
+
+Name: nao_moveit_tweaked
+Description: Description of nao_moveit_tweaked
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

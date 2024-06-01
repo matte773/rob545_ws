@@ -1,0 +1,8 @@
+prefix=/home/matt/rob545_ws/devel/.private/nao_ik
+
+Name: nao_ik
+Description: Description of nao_ik
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
