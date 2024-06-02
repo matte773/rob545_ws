@@ -1,1 +1,0 @@
-/home/matt/rob545_ws/devel/.private/nao_bringup/lib/pkgconfig/nao_bringup.pc

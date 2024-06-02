@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/matt/ros_ws/devel/include/**",
+        "/home/matt/ros_ws/src/fetch_gazebo/fetch_gazebo/include/**",
+        "/home/matt/ros_ws/src/rob599/inclass/include/**",
+        "/home/matt/rob545_ws/src/nao_ik/include/**",
+        "/home/matt/rob545_ws/src/nao_moveit_tweaked/include/**",
+        "/home/matt/ros_ws/src/rob599/rob599_hw1/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

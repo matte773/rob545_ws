@@ -1,1 +1,0 @@
-/home/matt/rob545_ws/devel/.private/nao_moveit_config/lib/pkgconfig/nao_moveit_config.pc

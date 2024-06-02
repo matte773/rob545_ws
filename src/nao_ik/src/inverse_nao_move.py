@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+''' When running with NAO urdf use the following command:
+rosrun nao_ik inverse_nao_move.py --start_link base_link --end_link r_gripper
+
+When running with Jamie urdf use the following command:
+rosrun nao_ik inverse_nao_move.py --start_link chest_link_1 --end_link forearm_right_v1_1
+'''
+
 import rospy
 from sensor_msgs.msg import JointState
 from urdf_parser_py.urdf import URDF
@@ -27,15 +34,15 @@ joint_state_publisher = rospy.Publisher('/joint_states', JointState, queue_size=
 rospy.sleep(1)
 
 # Convert xacro to URDF
-# robot2_urdf_path = "/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro"
-robot2_urdf_path = "/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
+robot2_urdf_path = "/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro"
+# robot2_urdf_path = "/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
 
 urdf_output_path = "/tmp/jamie.urdf"
 subprocess.run(["rosrun", "xacro", "xacro", robot2_urdf_path, "-o", urdf_output_path], check=True)
 
 # Load the converted URDF
-# robot2 = URDF.from_xml_file("/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro")
-robot2 = URDF.from_xml_file("/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf")
+robot2 = URDF.from_xml_file("/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro")
+# robot2 = URDF.from_xml_file("/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf")
 
 
 # Create a KDL tree and chain for the specified part of the robot
@@ -111,7 +118,7 @@ for idx, pose in enumerate(end_effector_poses):  # Iterate directly over the lis
 
     # Check if a valid IK solution was found
     if result >= 0:
-        print(f"IK solution found for pose {idx + 1}")
+        print(f"IK solution found for pose {idx + 1}/{len(end_effector_poses)}")
         joint_positions = [q_out[i] for i in range(chain2.getNrOfJoints())]
         print(f"Joint positions: {joint_positions}")
 
@@ -137,6 +144,6 @@ for idx, pose in enumerate(end_effector_poses):  # Iterate directly over the lis
         for i in range(chain2.getNrOfJoints()):
             q_init[i] = q_out[i]
     else:
-        print(f"IK solution not found for pose {idx + 1}")
+        print(f"IK solution not found for pose {idx + 1}/{len(end_effector_poses)}")
 
     rospy.sleep(0.1)  # Adjust timing to match the original wave motion

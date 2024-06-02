@@ -1,1 +1,0 @@
-/home/matt/rob545_ws/devel/.private/jamie_description/lib/pkgconfig/jamie_description.pc
