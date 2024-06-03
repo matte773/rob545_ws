@@ -2,6 +2,7 @@
 
 import rospy
 from sensor_msgs.msg import JointState
+from tf2_msgs.msg import TFMessage
 from urdf_parser_py.urdf import URDF
 from PyKDL import Chain, JntArray, Frame, ChainFkSolverPos_recursive
 import numpy as np
@@ -12,22 +13,23 @@ import pickle
 import kdl_parser_py.urdf
 
 rospy.init_node('nao_smooth_wave_motion')
-joint_state_publisher = rospy.Publisher('/joint_states', JointState, queue_size=10)
+joint_state_publisher = rospy.Publisher('/cmd_joint_states', JointState, queue_size=10)
 rospy.sleep(1)  # Give RViz time to initialize
 
 # Load the URDF directly from the file
-#urdf_path = "/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
+#urdf_path = "/home/magraz/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
 #robot = URDF.from_xml_file(urdf_path)
 
 # Load the converted URDF
-robot = URDF.from_xml_file("/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro")
+robot = URDF.from_xml_file("/home/magraz/rob545_ws/src/jamie_description/urdf/jamie.xacro")
 
 # Create a KDL tree and chain from the URDF
 ok, tree = kdl_parser_py.urdf.treeFromUrdfModel(robot)
 if not ok:
     rospy.logerr("Failed to construct KDL tree from URDF")
     exit(1)
-chain = tree.getChain("torso", "r_gripper")
+
+chain = tree.getChain("chest_link_1", "forearm_right_v1_1")
 
 # Get joint names and limits from the URDF
 joint_names = [joint.name for joint in robot.joints if joint.type != 'fixed']
@@ -35,12 +37,10 @@ joint_limits = {joint.name: (joint.limit.lower, joint.limit.upper) for joint in 
 
 # Define joint angle ranges for the wave motion (radians)
 wave_range = {
-    'RShoulderPitch': [-3.0, 3.0],
-    'RShoulderRoll': [0.0, 0.5],
-    'RElbowYaw': [0.0, 1.5],
-    'RElbowRoll': [-0.6, 0.0],
-    'RWristYaw': [-1.0, 1.0],  
-    'RHand': [0.0, 1.0],  
+    'Revolute 3': [-2.51, -2.51],
+    'Revolute 4': [-0.44, 0.44],
+    'Revolute 21': [-0.65, 0.65],
+    'Revolute 22': [-1.0, 0.0],
 }
 
 fixed_joint_angles = {}
@@ -64,10 +64,7 @@ def generate_smooth_trajectory(wave_range, duration=10.0, num_points=100):
     for joint, (min_angle, max_angle) in wave_range.items():
         amplitude = (max_angle - min_angle) / 2
         offset = (max_angle + min_angle) / 2
-        if joint == 'RHand':
-            trajectory[joint] = offset + (amplitude * 0.2) * np.sin(2 * np.pi * wave_frequency * t / duration)
-        else:
-            trajectory[joint] = offset + (amplitude * 0.2) * np.sin(2 * np.pi * wave_frequency * t / duration)
+        trajectory[joint] = offset + (amplitude * 0.2) * np.sin(2 * np.pi * wave_frequency * t / duration)
 
     return trajectory
 
@@ -95,8 +92,8 @@ def publish_end_effector_pose(end_effector_pose):
         (end_effector_pose.position.x, end_effector_pose.position.y, end_effector_pose.position.z),
         (end_effector_pose.orientation.x, end_effector_pose.orientation.y, end_effector_pose.orientation.z, end_effector_pose.orientation.w),
         rospy.Time.now(),
-        "r_gripper",
-        "base_link"
+        "forearm_right_v1_1",
+        "chest_link_1 "
     )
 
 # Main loop to execute the smooth wave motion
@@ -117,16 +114,16 @@ while not rospy.is_shutdown():
                 joint_angles[j] = smooth_trajectory[joint_names[j]][i]
 
         end_effector_pose = forward_kinematics(joint_angles, chain)
-        publish_end_effector_pose(end_effector_pose)
+        # publish_end_effector_pose(end_effector_pose)
         end_effector_poses.append(end_effector_pose)
 
         joint_state_publisher.publish(joint_state)
-        #print(f"Joint State: {joint_state.position} End Effector Pose: {end_effector_pose.position}")
+        print(f"Joint State: {joint_state.position} End Effector Pose: {end_effector_pose.position}")
         rospy.sleep(0.05)
 
 # Save end effector poses to a file (e.g., pickle)
 current_dir = os.path.dirname(os.path.realpath(__file__))
-file_path = os.path.join(current_dir, 'end_effector_poses.pkl')
+file_path = os.path.join(current_dir, 'end_effector_poses_jamie.pkl')
 
 with open(file_path, 'wb') as f:
     pickle.dump(end_effector_poses, f)
