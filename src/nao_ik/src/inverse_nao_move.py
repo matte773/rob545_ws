@@ -30,19 +30,19 @@ def parse_args():
 args = parse_args()
 
 rospy.init_node('nao_wave_replication')
-joint_state_publisher = rospy.Publisher('/joint_states', JointState, queue_size=10)
+joint_state_publisher = rospy.Publisher('/cmd_joint_states', JointState, queue_size=10)
 rospy.sleep(1)
 
 # Convert xacro to URDF
-robot2_urdf_path = "/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro"
-# robot2_urdf_path = "/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
+# robot2_urdf_path = "/home/magraz/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
 
+robot2_urdf_path = "/home/magraz/rob545_ws/src/jamie_description/urdf/jamie.xacro"
 urdf_output_path = "/tmp/jamie.urdf"
 subprocess.run(["rosrun", "xacro", "xacro", robot2_urdf_path, "-o", urdf_output_path], check=True)
 
 # Load the converted URDF
-robot2 = URDF.from_xml_file("/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro")
-# robot2 = URDF.from_xml_file("/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf")
+robot2 = URDF.from_xml_file("/home/magraz/rob545_ws/src/jamie_description/urdf/jamie.xacro")
+# robot2 = URDF.from_xml_file("/home/magraz/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf")
 
 
 # Create a KDL tree and chain for the specified part of the robot
@@ -66,7 +66,7 @@ joint_names2 = list(joint_limits.keys())
 print(f"Joint names for the specified chain: {joint_names2}")
 
 # Ensure the path to the pickle file is correct
-pickle_file_path = os.path.join(os.path.dirname(__file__), 'end_effector_poses.pkl')
+pickle_file_path = os.path.join(os.path.dirname(__file__), 'end_effector_poses_jamie.pkl')
 
 # Load the saved end effector poses
 try:

@@ -4,12 +4,13 @@
 <xacro:include filename="$(find jamie_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find jamie_description)/urdf/jamie.trans" />
 <xacro:include filename="$(find jamie_description)/urdf/jamie.gazebo" />
+
 <link name="base_link">
-  <inertial>
+  <!-- <inertial>
     <origin xyz="-0.011688232223622823 -0.04997378243790669 -0.12088695327313781" rpy="0 0 0"/>
     <mass value="0.8307183918921939"/>
     <inertia ixx="0.000743" iyy="0.00316" izz="0.00283" ixy="0.0" iyz="3.2e-05" ixz="-0.0"/>
-  </inertial>
+  </inertial> -->
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
