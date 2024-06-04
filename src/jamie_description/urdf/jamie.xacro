@@ -4,13 +4,12 @@
 <xacro:include filename="$(find jamie_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find jamie_description)/urdf/jamie.trans" />
 <xacro:include filename="$(find jamie_description)/urdf/jamie.gazebo" />
-
 <link name="base_link">
-  <!-- <inertial>
+  <inertial>
     <origin xyz="-0.011688232223622823 -0.04997378243790669 -0.12088695327313781" rpy="0 0 0"/>
     <mass value="0.8307183918921939"/>
     <inertia ixx="0.000743" iyy="0.00316" izz="0.00283" ixy="0.0" iyz="3.2e-05" ixz="-0.0"/>
-  </inertial> -->
+  </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
@@ -698,6 +697,27 @@
   </collision>
 </link>
 
+<link name="right_hand_1">
+  <inertial>
+    <origin xyz="-0.08648482679225791 -0.12490687861747213 -0.133081495861343" rpy="0 0 0"/>
+    <mass value="0.06220245659592166"/>
+    <inertia ixx="4e-06" iyy="4e-06" izz="5e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.19647 -0.116899 0.009254" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://jamie_description/meshes/right_hand_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.19647 -0.116899 0.009254" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://jamie_description/meshes/right_hand_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Revolute 4" type="revolute">
   <origin xyz="0.023051 -0.012237 -0.000987" rpy="0 0 0"/>
   <parent link="right_shoulder_connector_link_1"/>
@@ -926,6 +946,12 @@
   <child link="right_foot_link_1"/>
   <axis xyz="-1.0 0.0 -0.0"/>
   <limit upper="0.785398" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 95" type="fixed">
+  <origin xyz="0.074485 0.133757 0.005384" rpy="0 0 0"/>
+  <parent link="forearm_right_v1_1"/>
+  <child link="right_hand_1"/>
 </joint>
 
 </robot>

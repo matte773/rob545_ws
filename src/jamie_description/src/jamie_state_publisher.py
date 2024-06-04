@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
 from math import sin, cos, pi
+import math
 import xml.dom.minidom
 import rospy
 from geometry_msgs.msg import Quaternion
-from jamie_description.msg import JointAngles
+# from jamie_description.msg import JointAngles
 from sensor_msgs.msg import JointState
 
 def get_param(name, value=None):

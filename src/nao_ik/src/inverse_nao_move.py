@@ -34,15 +34,16 @@ joint_state_publisher = rospy.Publisher('/cmd_joint_states', JointState, queue_s
 rospy.sleep(1)
 
 # Convert xacro to URDF
-# robot2_urdf_path = "/home/magraz/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
+# robot2_urdf_path = "/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
+robot2_urdf_path = "/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro"
 
-robot2_urdf_path = "/home/magraz/rob545_ws/src/jamie_description/urdf/jamie.xacro"
+
 urdf_output_path = "/tmp/jamie.urdf"
 subprocess.run(["rosrun", "xacro", "xacro", robot2_urdf_path, "-o", urdf_output_path], check=True)
 
 # Load the converted URDF
-robot2 = URDF.from_xml_file("/home/magraz/rob545_ws/src/jamie_description/urdf/jamie.xacro")
-# robot2 = URDF.from_xml_file("/home/magraz/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf")
+robot2 = URDF.from_xml_file("/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro")
+# robot2 = URDF.from_xml_file("/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf")
 
 
 # Create a KDL tree and chain for the specified part of the robot

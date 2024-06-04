@@ -17,11 +17,11 @@ joint_state_publisher = rospy.Publisher('/cmd_joint_states', JointState, queue_s
 rospy.sleep(1)  # Give RViz time to initialize
 
 # Load the URDF directly from the file
-#urdf_path = "/home/magraz/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
-#robot = URDF.from_xml_file(urdf_path)
+urdf_path = "/home/matt/rob545_ws/src/nao_robot/nao_description/urdf/naoV40_generated_urdf/nao.urdf"
+robot = URDF.from_xml_file(urdf_path)
 
 # Load the converted URDF
-robot = URDF.from_xml_file("/home/magraz/rob545_ws/src/jamie_description/urdf/jamie.xacro")
+# robot = URDF.from_xml_file("/home/matt/rob545_ws/src/jamie_description/urdf/jamie.xacro")
 
 # Create a KDL tree and chain from the URDF
 ok, tree = kdl_parser_py.urdf.treeFromUrdfModel(robot)
@@ -29,7 +29,9 @@ if not ok:
     rospy.logerr("Failed to construct KDL tree from URDF")
     exit(1)
 
-chain = tree.getChain("chest_link_1", "forearm_right_v1_1")
+# chain = tree.getChain("chest_link_1", "right_hand_1")
+chain = tree.getChain("base_link", "r_gripper")
+
 
 # Get joint names and limits from the URDF
 joint_names = [joint.name for joint in robot.joints if joint.type != 'fixed']
@@ -37,10 +39,16 @@ joint_limits = {joint.name: (joint.limit.lower, joint.limit.upper) for joint in 
 
 # Define joint angle ranges for the wave motion (radians)
 wave_range = {
-    'Revolute 3': [-2.51, -2.51],
-    'Revolute 4': [-0.44, 0.44],
-    'Revolute 21': [-0.65, 0.65],
-    'Revolute 22': [-1.0, 0.0],
+    # 'Revolute 3': [-2.51, -2.51],
+    # 'Revolute 4': [-0.44, 0.44],
+    # 'Revolute 21': [-0.65, 0.65],
+    # 'Revolute 22': [-1.0, 0.0],
+    'RShoulderPitch': [0.0, 0.0],
+    'RShoulderRoll': [-1.0, 4.0],
+    'RElbowYaw': [0.0, 3.0],
+    'RElbowRoll': [0.0, 2.0],
+    'RWristYaw': [0.0, 0.0],  
+    'RHand': [0.0, 0.0],  
 }
 
 fixed_joint_angles = {}
@@ -92,8 +100,10 @@ def publish_end_effector_pose(end_effector_pose):
         (end_effector_pose.position.x, end_effector_pose.position.y, end_effector_pose.position.z),
         (end_effector_pose.orientation.x, end_effector_pose.orientation.y, end_effector_pose.orientation.z, end_effector_pose.orientation.w),
         rospy.Time.now(),
-        "forearm_right_v1_1",
-        "chest_link_1 "
+        # "right_hand_1",
+        # "chest_link_1 "
+        "base_link", 
+        "r_gripper"
     )
 
 # Main loop to execute the smooth wave motion
